@@ -1,114 +1,222 @@
 /* Common CSS */
-*{
-    font-family: "Work Sans", sans-serif;;
+* {
+  font-family: "Work Sans", sans-serif;
 }
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-h1{
-    font-size: 64px;
-    color: #131313;
+h1 {
+  font-size: 64px;
+  color: #131313;
 }
-p{
-    color: #727272;
+p {
+  color: #727272;
 }
-.btn-primary{
-    border-radius: 8px;
-    background: #FF900E;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-    padding: 18px 22px;
-    border: none;
-    cursor: pointer;
-    margin: 30px auto;
+.btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  padding: 18px 22px;
+  border: none;
+  cursor: pointer;
+  margin: 30px auto;
 }
-
 
 /* Header CSS */
-header{
-    background: rgba(255, 144, 14, 0.10);
+header {
+  background: rgba(255, 144, 14, 0.1);
 }
 /* Nav CSS */
-nav{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1140px;
-    margin: 0 auto;
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
 }
-nav h3{
-    font-size: 40px;
-    font-weight: 700;
+nav h3 {
+  font-size: 40px;
+  font-weight: 700;
 }
-nav ul{
-    display: flex;
-    gap: 30px;
-    align-items: center;
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
-nav ul li{
-    list-style: none;
+nav ul li {
+  list-style: none;
 }
-nav ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #424242;
-}
-
-.page-title{
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
-}
-.page-title h1{
-    margin: 0;
-}
-.hero{
-    max-width: 1140px;
-    margin: 30px auto;
-    padding-bottom: 30px;
-}
-.hero img{
-    width: 100%;
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #424242;
 }
 
+.page-title {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+.page-title h1 {
+  margin: 0;
+}
+.hero {
+  max-width: 1140px;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+.hero img {
+  width: 100%;
+}
 
 /* Features CSS */
-.features{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    max-width: 1140px;
-    margin: 60px auto;
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1140px;
+  margin: 60px auto;
 }
-.feature-col{
-    width: 50%;
+.feature-col {
+  width: 50%;
 }
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
-.gallery img{
-    width: 100%;
+.gallery img {
+  width: 100%;
 }
-.feature-col h3{
-    font-size: 35px;
-    color: #131313;
-    width: 400px;
+.feature-col h3 {
+  font-size: 35px;
+  color: #131313;
+  width: 400px;
 }
-h3 .gray{
-    color: #727272;
+h3 .gray {
+  color: #727272;
 }
-h3 .orange{
-    color: #FF900E;
+h3 .orange {
+  color: #ff900e;
 }
-.feature-col p{
+.feature-col p {
+  margin: 0;
+}
+
+/* Loved Features */
+.loved-feature {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  gap: 70px;
+  margin: 100px auto;
+}
+.content {
+  width: 50%;
+}
+.architect {
+  width: 50%;
+}
+.architect img {
+  width: 100%;
+}
+.heading {
+  border-left: 4px solid #ff900e;
+  padding-left: 20px;
+}
+.heading h3 {
+  font-size: 40px;
+}
+.card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 26px 30px;
+  margin-bottom: 20px;
+}
+.card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.experience {
+  border-radius: 8px;
+  background: #ff900e;
+  width: 272px;
+  height: 120px;
+  padding:26px 22px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  right: 50px;
+}
+.experience h2{
+    font-size: 65px;
+    color: white;
+    margin: 0;
+}
+.experience p{
+    font-size: 18px;
+    color: white;
     margin: 0;
 }
 
 
+/* Fact CSS */
+.facts{
+  max-width: 1140px;
+  margin: 0 auto 100px auto;
+}
+.fact-boxes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.fact-box{
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fact-box h4{
+  margin: 10px 0;
+  }
+.fact-box p{
+  margin-top: 0;
+}
+.fact-title h3{
+  font-size: 35px;
+  margin-bottom: 0;
+}
+.fact-title p{
+  width: 500px;
+  margin-bottom: 80px;
+}
+
+
+/* Sponsors CSS */
+.sponsors{
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto 100px auto;
+}
+.sponsors h3{
+  font-size: 35px;
+}
+.sponsor{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
 
 
@@ -116,131 +224,207 @@ h3 .orange{
 
 /* Responsive */
 @media screen and (max-width: 375px) {
-    header{
-        padding: 0 8px;
-    }
-    nav{
-        width: auto;
-        justify-content: center;
-    }
-    nav h3{
-        font-size: 28px;
-    }
-    nav ul{
-        display: none;
-    }
-    .page-title{
-        width: auto;
-    }
-    .page-title h1{
-        font-size: 35px;
-    }
-    .btn-primary{
-        margin: 0;
-        padding: 14px 20px;
-        font-size: 16px;
-    }
-    .hero{
-        width: auto;
-    }
+  header {
+    padding: 0 8px;
+  }
+  nav {
+    width: auto;
+    justify-content: center;
+  }
+  nav h3 {
+    font-size: 28px;
+  }
+  nav ul {
+    display: none;
+  }
+  .page-title {
+    width: auto;
+  }
+  .page-title h1 {
+    font-size: 35px;
+  }
+  .btn-primary {
+    margin: 0;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  .hero {
+    width: auto;
+  }
 
-    .features{
-        flex-direction: column-reverse;
-        gap: 20px;
-        text-align: center;
-        padding: 0 8px;
-    }
-    .feature-col h3{
-        font-size: 35px;
-        color: #131313;
-        width: auto;
-        margin-bottom: 10px;
-    }
-    .feature-col{
-        width: 100%;
-    }
-    .feature-col button{
-        margin-top: 20px;
-    }
+  .features {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .feature-col h3 {
+    font-size: 35px;
+    color: #131313;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .feature-col {
+    width: 100%;
+  }
+  .feature-col button {
+    margin-top: 20px;
+  }
+
+  .loved-feature{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 8px;
+  }
+  .content{
+    width: 100%;
+  }
+  .architect{
+    width: 100%;
+  }
+  .experience {
+    width: 172px;
+    height: 80px;
+    padding:20px 18px;
+    bottom: 550px;
+    right: auto;
+  }
+  .experience h2{
+      font-size: 40px;
+  }
+  .experience p{
+      font-size: 18px;
+  }
+
+
+  .facts{
+    padding: 0 8px;
+  }
+  .fact-title p{
+    width: auto;
+  }
 }
 
+@media screen and (min-width: 376px) and (max-width: 575px) {
+  header {
+    padding: 0 8px;
+  }
+  nav {
+    width: auto;
+    justify-content: center;
+  }
+  nav h3 {
+    font-size: 28px;
+  }
+  nav ul {
+    display: none;
+  }
+  .page-title {
+    width: auto;
+  }
+  .page-title h1 {
+    font-size: 35px;
+  }
+  .btn-primary {
+    margin: 0;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  .hero {
+    width: auto;
+  }
 
-@media screen and (min-width:376px) and (max-width: 575px) {
-    header{
-        padding: 0 8px;
-    }
-    nav{
-        width: auto;
-        justify-content: center;
-    }
-    nav h3{
-        font-size: 28px;
-    }
-    nav ul{
-        display: none;
-    }
-    .page-title{
-        width: auto;
-    }
-    .page-title h1{
-        font-size: 35px;
-    }
-    .btn-primary{
-        margin: 0;
-        padding: 14px 20px;
-        font-size: 16px;
-    }
-    .hero{
-        width: auto;
-    }
+  .features {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .feature-col h3 {
+    font-size: 35px;
+    color: #131313;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .feature-col {
+    width: 100%;
+  }
+  .feature-col button {
+    margin-top: 20px;
+  }
 
-    .features{
-        flex-direction: column-reverse;
-        gap: 20px;
-        text-align: center;
-        padding: 0 8px;
-    }
-    .feature-col h3{
-        font-size: 35px;
-        color: #131313;
-        width: auto;
-        margin-bottom: 10px;
-    }
-    .feature-col{
-        width: 100%;
-    }
-    .feature-col button{
-        margin-top: 20px;
-    }
+  .loved-feature{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 8px;
+  }
+  .content{
+    width: 100%;
+  }
+  .architect{
+    width: 100%;
+  }
+  .experience {
+    width: 172px;
+    height: 80px;
+    padding:20px 18px;
+    bottom: 550px;
+    right: auto;
+  }
+  .experience h2{
+      font-size: 40px;
+  }
+  .experience p{
+      font-size: 18px;
+  }
+
+  .facts{
+    padding: 0 8px;
+  }
+  .fact-title p{
+    width: auto;
+  }
 }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding: 0 8px;
+  }
+  nav {
+    width: auto;
+  }
+  nav h3 {
+    font-size: 28px;
+  }
+  .feature-col h3 {
+    width: auto;
+  }
 
-@media screen and (min-width:576px) and (max-width: 992px) {
-    header{
-        padding: 0 8px;
-    }
-    nav{
-        width: auto;
-    }
-    nav h3{
-        font-size: 28px;
-    }
-    .page-title{
-        width: auto;
-    }
-    .hero{
-        width: auto;
-    }
+  .page-title {
+    width: auto;
+  }
+  .hero {
+    width: auto;
+  }
+  .facts{
+    padding: 0 8px;
+  }
+  .fact-title p{
+    width: auto;
+  }
 }
 
-
-@media screen and (min-width:993px) {
-    header{
-        padding: 0 8px;
-    }
-    nav{
-        width: auto;
-    }
-
-
+@media screen and (min-width: 993px) {
+  header {
+    padding: 0 8px;
+  }
+  nav {
+    width: auto;
+  }
+  .facts{
+    padding: 0 8px;
+  }
+  .fact-title p{
+    width: auto;
+  }
 }
