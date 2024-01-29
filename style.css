@@ -208,16 +208,32 @@ h3 .orange {
   max-width: 1140px;
   margin: 0 auto 100px auto;
 }
-.sponsors h3{
+.sponsor-title h3{
   font-size: 35px;
+  margin-bottom: 0;
+}
+.sponsor-title p{
+  width: 500px;
+  margin: 20px auto 40px auto;
 }
 .sponsor{
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
+.footer-container{
+  width: 1140px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #FFF4E7;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -303,6 +319,19 @@ h3 .orange {
   .fact-title p{
     width: auto;
   }
+
+  .sponsors{
+    padding: 0 8px;
+  }
+  .sponsor-title p{
+    width: auto;
+  }
+
+  .footer-container{
+    width: auto;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 575px) {
@@ -383,6 +412,18 @@ h3 .orange {
   }
   .fact-title p{
     width: auto;
+  }
+  .sponsors{
+    padding: 0 8px;
+  }
+  .sponsor-title p{
+    width: auto;
+  }
+  .footer-container{
+    text-align: center;
+    width: auto;
+    padding: 10px 20px;
+    
   }
 }
 
