@@ -8,6 +8,9 @@
 p{
     color: #424242;
 }
+h1, h2, h3, h4{
+    color: #131313;
+}
 
 /* Header CSS */
 header{
@@ -52,7 +55,7 @@ nav ul li a{
 .header-content p{
     margin: 20px 0;
 }
-.header-content a{
+.btn-primary{
     text-decoration: none;
     color: white;
     background-color: #FF900E;
@@ -66,12 +69,49 @@ nav ul li a{
 }
 
 
+/* main section */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Feature Section CSS */
+.features-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-content h2{
+    font-size: 40px;
+}
+.feature-gray{
+    color: #424242bb;
+}
+.feature-primary{
+    color: #FF900E;
+}
+.feature-content p{
+    margin: 30px 0;
+}
+
+
+
+
+
+
 
 
                             /* Responsive CSS */
 @media screen and (max-width:576px) {
     header{
         padding: 0 10px;
+        margin-bottom: 70px;
     }
     nav{
         flex-direction: column;
@@ -83,5 +123,19 @@ nav ul li a{
     }
     .header-content h1{
         font-size: 2.5rem;
+    }
+
+    main{
+        padding: 0 10px;
+    }
+    .features-section{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .feature-content p{
+        margin: 20px 0;
+    }
+    .feature-images img{
+        width: 100%;
     }
 }
