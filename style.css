@@ -8,7 +8,7 @@
 p{
     color: #424242;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5, h6{
     color: #131313;
 }
 
@@ -102,6 +102,105 @@ main{
 
 
 
+/* Loved Feature */
+.loved-feature-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.loved-feature-content h2{
+    font-size: 45px;
+    border-left: 3px solid #FF900E;
+    padding: 0 10px;
+    margin: 20px 0;
+}
+.loved-feature-content p{
+    margin: 10px 0;
+}
+.loved-feature-content{
+    flex: 1;
+}
+.feature{
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow:  2px 2px 10px #424242;
+}
+.feature h6{
+    font-size: 16px;
+}
+.feature:hover{
+    box-shadow: none;
+    border: 1px solid #FF900E;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.loved-feature-image{
+    flex: 1;
+    position: relative;
+}
+.loved-feature-image img{
+    width: 100%;
+}
+.special-feature{
+    background-color: #FF900E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+}
+.special-feature h2, h5{
+    color: white;
+}
+.special-feature h2{
+    font-size: 46px;
+}
+.special-feature h5{
+    font-size: 24px;
+}
+
+
+
+/* Facts CSS */
+.facts{
+    margin-bottom: 100px;
+}
+.facts h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.facts > p{
+    margin-bottom: 60px;
+}
+.fact{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    justify-content: space-around;
+}
+.fact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+.fact-card h4{
+    font-size: 28px;
+    margin: 10px 0;
+}
+
 
 
 
@@ -131,6 +230,7 @@ main{
     .features-section{
         flex-direction: column-reverse;
         gap: 0;
+        margin-bottom: 70px;
     }
     .feature-content p{
         margin: 20px 0;
@@ -138,4 +238,20 @@ main{
     .feature-images img{
         width: 100%;
     }
+    .loved-feature-section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .special-feature{
+        left: 0;
+        bottom: -30px;
+    }
+    .fact{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .facts > p{
+        margin-bottom: 30px;
+    }
 }
+
